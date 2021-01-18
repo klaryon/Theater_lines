@@ -1,9 +1,8 @@
-import { Component } from "react"
 import React from 'react';
 
 function Lines({lines}) {
-    const renderedLines = lines.map(line => (
-        <div>{line}</div>
+    const renderedLines = lines.map((line, id) => ( //include an id as a key
+        <div key={id}>{line}</div>
         )
     )
     return (
