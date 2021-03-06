@@ -1,20 +1,7 @@
 import styled from "styled-components";
-import Colors from "../theme/Colors";
+import Colors from "../../../theme/Colors";
 
-export const StyledLines = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: ${Colors.beige};
-  color: ${Colors.leaf};
-`;
-
-export const StyledDiv = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
-export const Button = styled.button`
+const StyledButton = styled.button`
   color: ${Colors.leaf};
   background-color: ${Colors.beige};
   font-weight: bold;
@@ -34,3 +21,5 @@ export const Button = styled.button`
     background-color: rgba(${Colors.leafRgb}, 0.1);
   }
 `;
+
+export default StyledButton;

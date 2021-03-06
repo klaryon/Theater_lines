@@ -1,5 +1,5 @@
 import './App.css';
-import Lines from './components/Lines'
+import Lines from './components/units/Lines/Lines'
 import { LINES } from './shared/texts'
 
 function App() {
