@@ -1,5 +1,6 @@
 import React from 'react';
-import {StyledLines, StyledDiv, Button} from './styles';
+import {StyledLines, StyledDiv} from './styles';
+import Button from '../Button/Button'
 
 function Lines({lines}) {
     const renderedLines = lines.map((line, id) => ( //include an id as a key
@@ -9,8 +10,8 @@ function Lines({lines}) {
     return (
         <>
             <StyledDiv>
-                <Button>Previous</Button>
-                <Button>Next</Button>
+                <Button text="Previous" />
+                <Button text="Next" />
             </StyledDiv>
             <StyledLines>{renderedLines}</StyledLines>
         </>
